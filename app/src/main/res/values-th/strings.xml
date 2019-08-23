@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My ToDo</string>
+    <string name="LoginToYourAccount">ลงชื่อเข้าสู่บัญชีของคุณ</string>
+    <string name="Email">อีเมลล์</string>
+    <string name="Password">รหัสผ่าน</string>
+    <string name="donthave">ยังไม่มีบัญชีผู้ใช้งาน? สมัครเลย</string>
+    <string name="Login">ลงชื่อเข้าใช้</string>
+</resources>
