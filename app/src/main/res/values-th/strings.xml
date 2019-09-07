@@ -6,4 +6,6 @@
     <string name="Password">รหัสผ่าน</string>
     <string name="donthave">ยังไม่มีบัญชีผู้ใช้งาน? สมัครเลย</string>
     <string name="Login">ลงชื่อเข้าใช้</string>
+    <string name="Login_failed">อีเมลหรือรหัสผ่านไม่ถูกต้อง</string>
+    <string name="Login_success">เข้าสู่ระบบสำเร็จ</string>
 </resources>

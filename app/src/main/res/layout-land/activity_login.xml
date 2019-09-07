@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/bg" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/emailedit"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -30,7 +30,7 @@
         android:ems="10"
         android:hint="@string/Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/passwordedit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,24 +38,24 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordedit"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/emailedit"
+        app:layout_constraintTop_toBottomOf="@+id/emailedit" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/login_button"
         android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/Login"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintStart_toStartOf="@+id/passwordedit"
+        app:layout_constraintTop_toBottomOf="@+id/passwordedit" />
 
     <TextView
         android:id="@+id/textView3"
@@ -65,9 +65,9 @@
         android:layout_marginBottom="8dp"
         android:text="@string/donthave"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/login_button"
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -80,9 +80,9 @@
         android:textColor="#356f19"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/emailedit"
+        app:layout_constraintEnd_toEndOf="@+id/emailedit"
+        app:layout_constraintStart_toStartOf="@+id/emailedit"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -92,10 +92,24 @@
         android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintEnd_toStartOf="@+id/emailedit"
         app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView4"
         app:srcCompat="@drawable/ic_todo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="491dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="300dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
